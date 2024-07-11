@@ -1,0 +1,31 @@
+{
+  "title": "Go-to place for your PHP development tools collection",
+  "url": "https://require-dev.info/",
+  "language": "en",
+  "description": "An opinionated list of PHP development tools.",
+  "feed": {
+    "subtitle": "An opinionated list of PHP development tools.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://require-dev.info/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://require-dev.info/feed/feed.json"
+  },
+  "author": {
+    "name": "Eduard Sukharev",
+    "email": "sukharev.eh@gmail.com",
+    "url": "https://require-dev.info/author/"
+  },
+  "nav": [
+    {
+        "title": "composer require --dev",
+        "url": "/"
+    },
+    {
+        "title": "about",
+        "url": "/about"
+    }
+  ]
+}

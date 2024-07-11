@@ -1,0 +1,12 @@
+<pre>
+<code>{
+  "require-dev": {
+{%- for package in packages %}
+    <a class="title" href="{{ package.url | url }}">"{{ package.data.package_name }}": "{{ package.data.package_version }}"</a>{% if not loop.last %},{% endif %}
+    {%- for tag in package.data.tags | filterTagList %}
+      {%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}<a class="tag" href="{{ tagUrl | url }}">{{ tag }}</a>
+    {%- endfor -%}
+{%- endfor %}
+  }
+}
+</code></pre>

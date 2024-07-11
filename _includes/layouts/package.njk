@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<h1 class="title">{{ title }}</h1>
+<div class="subtitle">
+{% if metadata.config.showDatePost %}<time class="post" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>{% endif %}
+{%- for tag in tags | filterTagList %}
+{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<a class="tag" href="{{ tagUrl | url }}" >{{ tag }}</a>
+{%- endfor %}
+</div>
+
+<div data-prismjs-copy="Copy">
+{% highlight "bash" %}
+composer require --dev "{{package_name}}/{{package_version}}"
+{% endhighlight %}
+</div>
+
+{{ content | safe }}
+

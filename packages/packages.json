@@ -1,0 +1,6 @@
+{
+  "tags": [
+    "packages"
+  ],
+  "layout": "layouts/package.njk"
+}
