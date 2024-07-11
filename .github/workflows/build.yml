@@ -50,8 +50,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./_site
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          # github_token: ${{ secrets.GITHUB_TOKEN }}
+          #deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
