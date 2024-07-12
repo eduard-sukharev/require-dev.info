@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://require-dev.info/about/</loc>
+    <lastmod>2024-07-12</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/</loc>
+    <lastmod>2024-07-12</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/packages/estahn_phpunit-json-assertions/</loc>
+    <lastmod>2024-07-12</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/packages/phpunit_phpunit/</loc>
+    <lastmod>2024-07-12</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/tags/</loc>
+    <lastmod>2024-07-12</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/tags/packages/</loc>
+    <lastmod>2024-07-12</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/tags/testing/</loc>
+    <lastmod>2024-07-12</lastmod>
+  </url>
+</urlset>

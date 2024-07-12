@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Go-to place for your PHP development tools collection</title>
+	<subtitle>An opinionated list of PHP development tools.</subtitle>
+	
+	<link href="https://require-dev.info/feed/feed.xml" rel="self"/>
+	<link href="https://require-dev.info/"/>
+	<updated>2024-07-12T06:36:21Z</updated>
+	<id>https://require-dev.info/</id>
+	<author>
+		<name>Eduard Sukharev</name>
+		<email>sukharev.eh@gmail.com</email>
+	</author>
+</feed>
