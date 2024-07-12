@@ -47,7 +47,10 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           cname: require-dev.info
-        
+          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
   deploy:
     environment:
       name: github-pages
