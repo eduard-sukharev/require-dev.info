@@ -41,6 +41,6 @@ jobs:
           publish_dir: ./_site
           cname: require-dev.info
           
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         
