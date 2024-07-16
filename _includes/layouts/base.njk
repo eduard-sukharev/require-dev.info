@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="{{ '/css/themes/prism-material-dark.css' | url }}" />
     <link rel="stylesheet" href="{{ '/css/line-awesome.min.css' | url }}" >
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-    <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
-    {% if process.env.ELEVENTY_ENV == 'production' %}
-      <script data-goatcounter="https://require-dev.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-    {% endif %}
+    <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">\
+    <script data-goatcounter="https://require-dev.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{ metadata.title }}">
     <meta property="og:url" content="{{ metadata.url + page.url.slice(1) }}">
