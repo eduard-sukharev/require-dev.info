@@ -4,7 +4,7 @@ layout: layouts/home.njk
 <p>Opinionated list of PHP development tools, at your service.</p>
 
 {% set maxPosts = collections.packages.length | min(3) %}
-{% set packages = collections.packages | head(-3) %}
+{% set packages = collections.packages %}
 {% set packagesCounter = collections.packages | length %}
 {% include "packages_list.njk" %}
 

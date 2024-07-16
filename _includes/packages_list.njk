@@ -1,12 +1,38 @@
-<pre>
-<code>{
-  "require-dev": {
-{%- for package in packages %}
-    <a class="title" href="{{ package.url | url }}">"{{ package.data.package_name }}": "{{ package.data.package_version }}"</a>{% if not loop.last %},{% endif %}
-    {%- for tag in package.data.tags | filterTagList %}
-      {%- set tagUrl -%}/tags/{{ tag | slugify }}/{%- endset -%}<a class="tag" href="{{ tagUrl | url }}">{{ tag }}</a>
-    {%- endfor -%}
-{%- endfor %}
-  }
-}
-</code></pre>
+<div class="flex leading-4 bg-gradient-to-b from-slate-900 to-slate-800 rounded-md text-gray-600">
+    <div class="w-16 flex-shrink-0 flex flex-col border-r border-gray-200 p-2">
+        <div class="flex-grow flex-shrink-0 text-sm px-2 line-numbers text-right">
+          <div></div>
+          <div></div>
+          {% for package in packages %}
+            <div></div>
+          {% endfor %}
+          <div></div>
+          <div></div>
+        </div>
+    </div>
+    <div class="p-2 flex flex-col flex-shrink-0 overflow-x-auto text-sm font-mono text-gray-400">
+      <code>{</code>
+      <code>&emsp;"require-dev": {</code>
+      {%- for package in packages -%}
+        <code>
+        &emsp;&emsp;<a class="package text-indigo-400" href="{{ package.url | url }}">"{{ package.data.package_name }}": "{{ package.data.package_version }}"</a>{%- if not loop.last -%},{%- endif -%}
+        </code>
+      {%- endfor -%}
+      <code>&emsp;}</code>
+      <code>}</code>
+    </div>
+    <div class="w-16 flex-shrink-0 flex flex-col border-l border-gray-200 p-2">
+        <div class="flex-grow flex-shrink-0 text-sm px-3">
+            <div></div>
+            <div></div>
+            {% for package in packages %}
+              <div class="flex flex-row">
+              {% for tagName in package.data.tags | filterTagList %}
+                  {% tag tagName %}
+              {% endfor %}
+              </div>
+            {% endfor %}
+        </div>
+    </div>
+  </div>
+</div>

@@ -9,21 +9,19 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.setServerOptions({
+   watch: ['_site/css/*.css'],
+  });
+
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("fonts");
 
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-    // codeAttributes: {
-    //   "data-prismjs-copy": "Copy",
-    //   "data-prismjs-copy-error": "Copy failed!",
-    //   "data-prismjs-copy-success": "Copied!",
-    //   "data-prismjs-copy-timeot": 3000,
-    // }
-  });
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
@@ -51,34 +49,12 @@ module.exports = function(eleventyConfig) {
     return Math.min.apply(null, numbers);
   });
 
-  function filterTagList(tags) {
-    return (tags || []).filter(tag => ["all", "nav", "post", "posts", "packages", "package"].indexOf(tag) === -1);
-  }
-
-  eleventyConfig.addFilter("filterTagList", filterTagList)
-
-  // Create an array of all tags
-  eleventyConfig.addCollection("tagList", function(collection) {
-    let tagSet = new Set();
-    collection.getAll().forEach(item => {
-      (item.data.tags || []).forEach(tag => tagSet.add(tag));
-    });
-
-    return filterTagList([...tagSet]);
-  });
+	eleventyConfig.addPlugin(require("./_modules/tags.js"));
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,
     linkify: true,
-  // }).use(markdownItAnchor, {
-  //   permalink: markdownItAnchor.permalink.ariaHidden({
-  //     placement: "after",
-  //     class: "direct-link",
-  //     symbol: "#"
-  //   }),
-  //   level: [1,2,3,4],
-  //   slugify: eleventyConfig.getFilter("slugify")
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
@@ -107,7 +83,6 @@ module.exports = function(eleventyConfig) {
       "md",
       "njk",
       "html",
-      "liquid"
     ],
 
     // Pre-process *.md files with: (default: `liquid`)

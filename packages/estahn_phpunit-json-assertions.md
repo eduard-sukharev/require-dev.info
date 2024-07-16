@@ -7,16 +7,6 @@ tags:
  - testing
 ---
 
-JSON assertions for PHPUnit includes traits/methods to help validate your JSON data through various methods.
+An extended set of JSON assertions for PHPUnit.
 
-## Features
-
-* Validate your JSON data via JSON Schema
-    * describes your existing data format
-    * clear, human- and machine-readable documentation
-    * complete structural validation, useful for
-        * automated testing
-        * validating client-submitted data
-    * See more details [here](http://json-schema.org/)
-* Access JSON data through expressions (e.g. `foo.bar[3]`)
-    * See more details [here](http://jmespath.org/examples.html)
+Allows you to not only validate your JSON data via JSON Schema (with clear documentation, complete structural validation and pretty output), but also query your JSON data with [powerful queries](http://jmespath.org/examples.html).
