@@ -1,7 +1,6 @@
----
-layout: layouts/base.njk
-templateClass: tmpl-post
----
+{% extends 'layouts/base.njk' %}
+
+{% block body %}
 <h1 class="title">{{ title }}</h1>
 <div class="subtitle">
 {% if metadata.config.showDatePost %}<time class="post" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>{% endif %}
@@ -13,9 +12,11 @@ templateClass: tmpl-post
 
 <div data-prismjs-copy="Copy">
 {% highlight "bash" %}
-composer require --dev "{{package_name}}/{{package_version}}"
+composer require --dev "{{package_name}}": "{{package_version}}"
 {% endhighlight %}
 </div>
 
 {{ content | safe }}
 
+
+{% endblock %}

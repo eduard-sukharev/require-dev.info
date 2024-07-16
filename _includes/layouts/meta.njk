@@ -1,0 +1,21 @@
+    {# Google Schema #}
+    <meta itemprop="name" content="{% if title %}{{ title }} | {% endif %}{{ metadata.title }}">
+    <meta itemprop="description" content="{{ description or metadata.description }}">
+
+    {# Open Graph #}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}{{ metadata.title }}">
+    <meta property="og:site_name" content="{{ metadata.site_name }}">
+    <meta property="og:url" content="{{ metadata.url + page.url.slice(1) }}">
+    <meta property="og:description" content="{{ description or metadata.description }}">
+    <meta property="og:image" content="{{ '/android-chrome-512x512.png' | url }}">
+    <meta property="og:locale" content="{{ metadata.locale }}">
+
+    {# Twitter #}
+    <meta property="twitter:title" content="{% if title %}{{ title }} | {% endif %}{{ metadata.title }}">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="{{ metadata.url + page.url.slice(1) }}">
+    <meta property="twitter:description" content="{{ description or metadata.description }}">
+    <meta property="twitter:site" content="{{ site.author.handle }}">
+    <meta property="twitter:creator" content="{{ site.author.handle }}">
+    <meta property="twitter:image:src" content="{{ site.url }}{{ site.baseUrl }}{{ site.images.twitter }}">

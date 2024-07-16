@@ -1,7 +1,9 @@
 {
-  "title": "Go-to place for your PHP development tools collection",
+  "title": "PHP dev-tools at your fingertips",
+  "site_name": "require-dev",
   "url": "https://require-dev.info/",
   "language": "en",
+  "locale": "en_GB",
   "description": "An opinionated list of PHP development tools.",
   "feed": {
     "subtitle": "An opinionated list of PHP development tools.",

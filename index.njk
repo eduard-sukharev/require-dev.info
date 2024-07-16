@@ -1,10 +1,13 @@
----
-layout: layouts/home.njk
----
-<p>Opinionated list of PHP development tools, at your service.</p>
+{% extends 'layouts/base.njk' %}
 
-{% set maxPosts = collections.packages.length | min(3) %}
-{% set packages = collections.packages %}
-{% set packagesCounter = collections.packages | length %}
-{% include "packages_list.njk" %}
+{% block body %}
+    <h1>{{ metadata.title }}</h1>
+    
+    <p>Pick a package to see what it's for, installation instructions and more.</p>
+    <p>Check out category tags on the right pane for quick tools overview by category.</p>
 
+    {% set packages = collections.packages %}
+    
+    {% include "packages_list.njk" %}
+
+{% endblock %}

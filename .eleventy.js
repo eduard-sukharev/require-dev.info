@@ -10,7 +10,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setServerOptions({
-   watch: ['_site/css/*.css'],
+    watch: ['_site/css/*.css'],
   });
 
   // Copy the `img` and `css` folders to the output
@@ -18,6 +18,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy(
+    {
+      'favicons/*': '/',
+    }
+  );
 
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);

@@ -1,6 +1,6 @@
-<div class="flex leading-4 bg-gradient-to-b from-slate-900 to-slate-800 rounded-md text-gray-600">
-    <div class="w-16 flex-shrink-0 flex flex-col border-r border-gray-200 p-2">
-        <div class="flex-grow flex-shrink-0 text-sm px-2 line-numbers text-right">
+<div class="flex text-xl bg-gradient-to-b from-slate-900 to-slate-800 rounded-md text-gray-600">
+    <div class="w-12 flex-shrink-0 flex flex-col border-r border-gray-200 p-2">
+        <div class="flex-grow flex-shrink-0 px-2 line-numbers text-right">
           <div></div>
           <div></div>
           {% for package in packages %}
@@ -10,19 +10,19 @@
           <div></div>
         </div>
     </div>
-    <div class="p-2 flex flex-col flex-shrink-0 overflow-x-auto text-sm font-mono text-gray-400">
+    <div class="p-2 flex flex-col flex-nowrap flex-grow overflow-x-auto font-mono text-gray-400">
       <code>{</code>
       <code>&emsp;"require-dev": {</code>
       {%- for package in packages -%}
-        <code>
+        <code class="flex-shrink-0 flex-nowrap">
         &emsp;&emsp;<a class="package text-indigo-400" href="{{ package.url | url }}">"{{ package.data.package_name }}": "{{ package.data.package_version }}"</a>{%- if not loop.last -%},{%- endif -%}
         </code>
       {%- endfor -%}
       <code>&emsp;}</code>
       <code>}</code>
     </div>
-    <div class="w-16 flex-shrink-0 flex flex-col border-l border-gray-200 p-2">
-        <div class="flex-grow flex-shrink-0 text-sm px-3">
+    <div class="max-w-3xl min-w-min flex-shrink-0 flex flex-col border-l border-gray-200 p-2">
+        <div class="flex-grow flex-shrink-0 px-3">
             <div>&nbsp;</div>
             <div>&nbsp;</div>
             {% for package in packages %}

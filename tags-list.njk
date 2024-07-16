@@ -1,9 +1,16 @@
 ---
 permalink: /tags/
-layout: layouts/base.njk
+title: Tags
 ---
-<h1>Tags</h1>
+{% extends 'layouts/base.njk' %}
 
+{% block body %}
+
+<div class="flex">
+{% set inlineTooltip = 0 %}
 {% for tagName in collections.tags %}
-    {% tag tagName %}
+    {% tag tagName, inlineTooltip %}
 {% endfor %}
+</div>
+
+{% endblock %}
