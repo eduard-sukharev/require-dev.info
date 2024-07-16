@@ -1,14 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP unit testing framework</title>
     <meta name="description" content="JSON assertions for PHPUnit (including JSON Schema)">
+    <link rel="stylesheet" href="/css/tailwind.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/prism.css">
     <link rel="stylesheet" href="/css/themes/prism-material-dark.css" />
+    <link rel="stylesheet" href="/css/line-awesome.min.css" >
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Go-to place for your PHP development tools collection">
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="Go-to place for your PHP development tools collection">
+    
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Go-to place for your PHP development tools collection">
     <meta property="og:url" content="https://require-dev.info/packages/estahn_phpunit-json-assertions/">
@@ -20,7 +24,7 @@
     <meta property="twitter:title" content="PHP unit testing framework">
     <meta property="twitter:description" content="JSON assertions for PHPUnit (including JSON Schema)">
   </head>
-  <body>
+  <body class="bg-gradient-to-br from-pink-400 via-indigo-400 to-cyan-400 m-0 m-auto">
     <header>
         <span class=""><a href="/">composer require --dev</a> - </span>
         <span class=""><a href="/about">about</a></span>
@@ -37,31 +41,12 @@
 <pre class="language-bash"><code class="language-bash"><span class="token function">composer</span> require <span class="token parameter variable">--dev</span> <span class="token string">"estahn/phpunit-json-assertions/^4.0"</span></code></pre>
 </div>
 
-<p>JSON assertions for PHPUnit includes traits/methods to help validate your JSON data through various methods.</p>
-<h2>Features</h2>
-<ul>
-<li>Validate your JSON data via JSON Schema
-<ul>
-<li>describes your existing data format</li>
-<li>clear, human- and machine-readable documentation</li>
-<li>complete structural validation, useful for
-<ul>
-<li>automated testing</li>
-<li>validating client-submitted data</li>
-</ul>
-</li>
-<li>See more details <a href="http://json-schema.org/">here</a></li>
-</ul>
-</li>
-<li>Access JSON data through expressions (e.g. <code>foo.bar[3]</code>)
-<ul>
-<li>See more details <a href="http://jmespath.org/examples.html">here</a></li>
-</ul>
-</li>
-</ul>
+<p>An extended set of JSON assertions for PHPUnit.</p>
+<p>Allows you to not only validate your JSON data via JSON Schema (with clear documentation, complete structural validation and pretty output), but also query your JSON data with <a href="http://jmespath.org/examples.html">powerful queries</a>.</p>
 
 
 
     </main>
+    <script src="/js/prism.js"></script>
   </body>
 </html>

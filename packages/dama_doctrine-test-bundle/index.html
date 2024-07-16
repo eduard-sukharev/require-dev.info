@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symfony bundle to isolate doctrine database tests and improve test performance</title>
+    <meta name="description" content="This bundle provides features that help you run your Symfony-framework-based App&#39;s testsuite more efficiently with isolated tests.">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="stylesheet" href="/css/themes/prism-material-dark.css" />
+    <link rel="stylesheet" href="/css/line-awesome.min.css" >
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Go-to place for your PHP development tools collection">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Go-to place for your PHP development tools collection">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Go-to place for your PHP development tools collection">
+    <meta property="og:url" content="https://require-dev.info/packages/dama_doctrine-test-bundle/">
+    <meta property="og:title" content="Symfony bundle to isolate doctrine database tests and improve test performance">
+    <meta property="og:description" content="This bundle provides features that help you run your Symfony-framework-based App&#39;s testsuite more efficiently with isolated tests.">
+
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://require-dev.info/packages/dama_doctrine-test-bundle/">
+    <meta property="twitter:title" content="Symfony bundle to isolate doctrine database tests and improve test performance">
+    <meta property="twitter:description" content="This bundle provides features that help you run your Symfony-framework-based App&#39;s testsuite more efficiently with isolated tests.">
+  </head>
+  <body class="bg-gradient-to-br from-pink-400 via-indigo-400 to-cyan-400 m-0 m-auto">
+    <header>
+        <span class=""><a href="/">composer require --dev</a> - </span>
+        <span class=""><a href="/about">about</a></span>
+    </header>
+
+    <main class="tmpl-post">
+      <h1 class="title">Symfony bundle to isolate doctrine database tests and improve test performance</h1>
+<div class="subtitle">
+
+<a class="tag" href="/tags/testing/" >testing</a>
+<a class="tag" href="/tags/fixtures/" >fixtures</a>
+</div>
+
+<div data-prismjs-copy="Copy">
+<pre class="language-bash"><code class="language-bash"><span class="token function">composer</span> require <span class="token parameter variable">--dev</span> <span class="token string">"dama/doctrine-test-bundle/^8.2"</span></code></pre>
+</div>
+
+<p>This bundle provides features that help you run your Symfony-framework-based App's testsuite more efficiently with isolated tests.</p>
+<p>Instead of cleaning up DB after each test this bundle wraps DB interaction in transactions and just rolls them back once the test is over. This results in a performance boost as there is no need to rebuild the schema, import a backup SQL dump or re-insert fixtures before every testcase.</p>
+<p>It also speeds up EntityManager data and query cache with included <code>Psr6StaticArrayCache</code>. This is especially beneficial if you have a lot of tests that boot kernels (like Controller tests or ContainerAware tests) and use Doctrine entities.</p>
+
+
+
+    </main>
+    <script src="/js/prism.js"></script>
+  </body>
+</html>

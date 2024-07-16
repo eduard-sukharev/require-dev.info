@@ -3,36 +3,86 @@
   
   <url>
     <loc>https://require-dev.info/about/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-07-16</lastmod>
   </url>
   
   <url>
     <loc>https://require-dev.info/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/packages/dama_doctrine-test-bundle/</loc>
+    <lastmod>2024-07-16</lastmod>
   </url>
   
   <url>
     <loc>https://require-dev.info/packages/estahn_phpunit-json-assertions/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/packages/mockery_mockery/</loc>
+    <lastmod>2024-07-16</lastmod>
   </url>
   
   <url>
     <loc>https://require-dev.info/packages/phpunit_phpunit/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/packages/rector_rector/</loc>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/packages/symplify_easy-coding-standard/</loc>
+    <lastmod>2024-07-16</lastmod>
   </url>
   
   <url>
     <loc>https://require-dev.info/tags/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-07-16</lastmod>
   </url>
   
   <url>
     <loc>https://require-dev.info/tags/packages/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-07-16</lastmod>
   </url>
   
   <url>
     <loc>https://require-dev.info/tags/testing/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/tags/fixtures/</loc>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/tags/test-doubles/</loc>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/tags/refactoring/</loc>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/tags/code-cleanup/</loc>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/tags/code-style/</loc>
+    <lastmod>2024-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://require-dev.info/tags/tags/</loc>
+    <lastmod>2024-07-16</lastmod>
   </url>
 </urlset>
