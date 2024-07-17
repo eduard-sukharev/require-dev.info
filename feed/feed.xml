@@ -1,14 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Go-to place for your PHP development tools collection</title>
+	<title>PHP dev-tools at your fingertips</title>
 	<subtitle>An opinionated list of PHP development tools.</subtitle>
 	
 	<link href="https://require-dev.info/feed/feed.xml" rel="self"/>
 	<link href="https://require-dev.info/"/>
-	<updated>2024-07-16T20:54:56Z</updated>
+	<updated>2024-07-17T08:09:47Z</updated>
 	<id>https://require-dev.info/</id>
 	<author>
 		<name>Eduard Sukharev</name>
 		<email>sukharev.eh@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Extensible and powerful code style analyzer and fixer</title>
+		<link href="https://require-dev.info/packages/symplify_easy-coding-standard/"/>
+		<updated>2024-07-17T08:09:47Z</updated>
+		<id>https://require-dev.info/packages/symplify_easy-coding-standard/</id>
+		<content type="html">&lt;p&gt;An extensible CS analyzer and fixer for your project. Runs in parallel, which makes it faster than alternatives. Has sensible defaults in prepared sets of rules.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Instant Upgrade and Automated Refactoring of any PHP code</title>
+		<link href="https://require-dev.info/packages/rector_rector/"/>
+		<updated>2024-07-17T08:09:47Z</updated>
+		<id>https://require-dev.info/packages/rector_rector/</id>
+		<content type="html">&lt;p&gt;One of the most significant tools of the latest time. Brings automated code refactoring and clean up at your finger tips.&lt;/p&gt;
+&lt;p&gt;Need to upgrade your PHP version? It gets you covered. Want to apply fancy null-coalescing operator instead of ancient &lt;code&gt;isset&lt;/code&gt; calls? Here you go. Need an upgrade for specific framework? It has custom pluggable rules for that. Your case is too specific? Write your own rule and you&#39;re good to go.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>PHP unit testing framework</title>
+		<link href="https://require-dev.info/packages/phpunit_phpunit/"/>
+		<updated>2024-07-17T08:09:47Z</updated>
+		<id>https://require-dev.info/packages/phpunit_phpunit/</id>
+		<content type="html">&lt;p&gt;You know this package. It&#39;s a de-facto standard for unit-testing PHP applications. Comes with a set of assertion functions, powerful test doubles tools, integrations with different frameworks and code coverage reports.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title></title>
+		<link href="https://require-dev.info/packages/mockery_mockery/"/>
+		<updated>2024-07-17T08:09:47Z</updated>
+		<id>https://require-dev.info/packages/mockery_mockery/</id>
+		<content type="html">&lt;p&gt;An alternative to PHPUnit&#39;s built-in test-doubles functionality. Arguably, more readable, flexible, and versatile.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>PHP unit testing framework</title>
+		<link href="https://require-dev.info/packages/estahn_phpunit-json-assertions/"/>
+		<updated>2024-07-17T08:09:47Z</updated>
+		<id>https://require-dev.info/packages/estahn_phpunit-json-assertions/</id>
+		<content type="html">&lt;p&gt;An extended set of JSON assertions for PHPUnit.&lt;/p&gt;
+&lt;p&gt;Allows you to not only validate your JSON data via JSON Schema (with clear documentation, complete structural validation and pretty output), but also query your JSON data with &lt;a href=&quot;http://jmespath.org/examples.html&quot;&gt;powerful queries&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Symfony bundle to isolate doctrine database tests and improve test performance</title>
+		<link href="https://require-dev.info/packages/dama_doctrine-test-bundle/"/>
+		<updated>2024-07-17T08:09:47Z</updated>
+		<id>https://require-dev.info/packages/dama_doctrine-test-bundle/</id>
+		<content type="html">&lt;p&gt;This bundle provides features that help you run your Symfony-framework-based App&#39;s testsuite more efficiently with isolated tests.&lt;/p&gt;
+&lt;p&gt;Instead of cleaning up DB after each test this bundle wraps DB interaction in transactions and just rolls them back once the test is over. This results in a performance boost as there is no need to rebuild the schema, import a backup SQL dump or re-insert fixtures before every testcase.&lt;/p&gt;
+&lt;p&gt;It also speeds up EntityManager data and query cache with included &lt;code&gt;Psr6StaticArrayCache&lt;/code&gt;. This is especially beneficial if you have a lot of tests that boot kernels (like Controller tests or ContainerAware tests) and use Doctrine entities.&lt;/p&gt;
+</content>
+	</entry>
 </feed>
