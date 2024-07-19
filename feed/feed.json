@@ -14,37 +14,37 @@
       "url": "https://require-dev.info/packages/symplify_easy-coding-standard/",
       "title": "Extensible and powerful code style analyzer and fixer",
       "content_html": "<p>An extensible CS analyzer and fixer for your project. Runs in parallel, which makes it faster than alternatives. Has sensible defaults in prepared sets of rules.</p>\n",
-      "date_published": "2024-07-17T08:11:00Z"
+      "date_published": "2024-07-19T19:19:26Z"
     },{
       "id": "https://require-dev.info/packages/rector_rector/",
       "url": "https://require-dev.info/packages/rector_rector/",
       "title": "Instant Upgrade and Automated Refactoring of any PHP code",
       "content_html": "<p>One of the most significant tools of the latest time. Brings automated code refactoring and clean up at your finger tips.</p>\n<p>Need to upgrade your PHP version? It gets you covered. Want to apply fancy null-coalescing operator instead of ancient <code>isset</code> calls? Here you go. Need an upgrade for specific framework? It has custom pluggable rules for that. Your case is too specific? Write your own rule and you're good to go.</p>\n",
-      "date_published": "2024-07-17T08:11:00Z"
+      "date_published": "2024-07-19T19:19:26Z"
     },{
       "id": "https://require-dev.info/packages/phpunit_phpunit/",
       "url": "https://require-dev.info/packages/phpunit_phpunit/",
       "title": "PHP unit testing framework",
       "content_html": "<p>You know this package. It's a de-facto standard for unit-testing PHP applications. Comes with a set of assertion functions, powerful test doubles tools, integrations with different frameworks and code coverage reports.</p>\n",
-      "date_published": "2024-07-17T08:11:00Z"
+      "date_published": "2024-07-19T19:19:26Z"
     },{
       "id": "https://require-dev.info/packages/mockery_mockery/",
       "url": "https://require-dev.info/packages/mockery_mockery/",
       "title": "",
       "content_html": "<p>An alternative to PHPUnit's built-in test-doubles functionality. Arguably, more readable, flexible, and versatile.</p>\n",
-      "date_published": "2024-07-17T08:11:00Z"
+      "date_published": "2024-07-19T19:19:26Z"
     },{
       "id": "https://require-dev.info/packages/estahn_phpunit-json-assertions/",
       "url": "https://require-dev.info/packages/estahn_phpunit-json-assertions/",
       "title": "PHP unit testing framework",
       "content_html": "<p>An extended set of JSON assertions for PHPUnit.</p>\n<p>Allows you to not only validate your JSON data via JSON Schema (with clear documentation, complete structural validation and pretty output), but also query your JSON data with <a href=\"http://jmespath.org/examples.html\">powerful queries</a>.</p>\n",
-      "date_published": "2024-07-17T08:11:00Z"
+      "date_published": "2024-07-19T19:19:26Z"
     },{
       "id": "https://require-dev.info/packages/dama_doctrine-test-bundle/",
       "url": "https://require-dev.info/packages/dama_doctrine-test-bundle/",
       "title": "Symfony bundle to isolate doctrine database tests and improve test performance",
       "content_html": "<p>This bundle provides features that help you run your Symfony-framework-based App's testsuite more efficiently with isolated tests.</p>\n<p>Instead of cleaning up DB after each test this bundle wraps DB interaction in transactions and just rolls them back once the test is over. This results in a performance boost as there is no need to rebuild the schema, import a backup SQL dump or re-insert fixtures before every testcase.</p>\n<p>It also speeds up EntityManager data and query cache with included <code>Psr6StaticArrayCache</code>. This is especially beneficial if you have a lot of tests that boot kernels (like Controller tests or ContainerAware tests) and use Doctrine entities.</p>\n",
-      "date_published": "2024-07-17T08:11:00Z"
+      "date_published": "2024-07-19T19:19:26Z"
     }
   ]
 }
