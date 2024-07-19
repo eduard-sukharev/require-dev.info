@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+    @apply text-3xl font-bold text-white mb-2
+}
+
+main p {
+    @apply mb-4 text-gray-600
+}
+
+.tag {
+    @apply inline-block;
+    @apply px-2;
+    /* @apply whitespace-nowrap; */
+    @apply relative;
+    @apply select-none;
+}
+
+.tag .tooltip {
+  @apply break-words;
+}
+
+/* Add custom CSS styles for the tooltips */
+.compact-pane .tooltip {
+    @apply hidden;
+    @apply bg-slate-700 text-slate-50;
+    @apply select-none whitespace-nowrap;
+    @apply p-2 rounded;
+    @apply absolute top-0 left-1/2 -translate-x-1/2 -translate-y-14;
+}
+
+/* Show tooltip on hover */
+.compact-pane .tag:hover .tooltip {
+    display: block;
+}
+
+.tag:hover {
+    color: #fff;
+}

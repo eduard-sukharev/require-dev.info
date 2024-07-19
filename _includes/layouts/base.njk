@@ -34,7 +34,24 @@
     {# {% include 'top-notice.njk' %} #}
     {# {% include 'header.njk' %} #}
     <main class="container mx-auto max-w-4xl p-8 grow">
-      {% block body %}default body{% endblock %}
+      {% block body %}
+      
+        <h1 class="title">{{ title or metadata.title }}</h1>
+
+        <div class="text-xl">
+
+        {% set tags = tags or collections.tags %}
+        {% set inlineTooltip = 0 %}
+        {%- for tag in tags | filterTagList %}
+            {% tag tag, inlineTooltip %}
+        {%- endfor %}
+        </div>
+
+        {% block content %}
+
+        {% endblock %}
+      
+      {% endblock %}
     </main>
     {% include 'layouts/footer.njk' %}
     {# {% include 'privacy-notice.njk' %} #}

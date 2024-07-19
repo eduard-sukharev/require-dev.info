@@ -17,35 +17,3 @@ header span {
     content: counter(line);
     counter-increment: line;
 }
-
-/* Add custom CSS styles for the icons */
-.tag {
-    /* display: inline-block; */
-    position: relative;
-    user-select: none; /* Make the icon not selectable */
-}
-
-/* Add custom CSS styles for the tooltips */
-.tooltip {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    top: -3rem; /* Position tooltip above the icons */
-    left: -50%; /* Center the tooltip */
-    /* transform: translateX(-50%); Center the tooltip horizontally */
-    z-index: 999;
-    user-select: none; /* Make the tooltip not selectable */
-    white-space: nowrap;
-}
-
-/* Show tooltip on hover */
-.tag:hover .tooltip {
-    display: block;
-}
-
-.tag:hover {
-    color: #fff;
-}

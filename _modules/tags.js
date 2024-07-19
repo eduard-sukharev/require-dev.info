@@ -33,16 +33,15 @@ module.exports = {
             return tags.get(tagName);
         });
 
-        eleventyConfig.addShortcode('tag', function(tagName, inline = 1) {
+        eleventyConfig.addShortcode('tag', function(tagName) {
             if (!tags.has(tagName)) {
                 throw new Error("Unmapped tag: '" + tagName + "'. Add mapping to tags.js");
             }
 
             const tagUrl = eleventyConfig.nunjucksFilters.url('/tags/' + eleventyConfig.nunjucksFilters.slugify(tagName));
-            const tooltipClass = inline ? 'tooltip' : '';
-            return `<a class="tag px-2" href="${tagUrl}">
+            return `<a class="tag" href="${tagUrl}">
                 <i class="las ${tags.get(tagName)}"></i>
-            <span class="${tooltipClass}">${tagName}</span>
+            <span class="tooltip">${tagName}</span>
             </a>`;
         });
     }

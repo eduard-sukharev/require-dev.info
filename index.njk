@@ -1,8 +1,9 @@
 {% extends 'layouts/base.njk' %}
 
-{% block body %}
-    <h1>{{ metadata.title }}</h1>
-    
+
+{% set tags = collections.tags %}
+
+{% block content %} 
     <p>Pick a package to see what it's for, installation instructions and more.</p>
     <p>Check out category tags on the right pane for quick tools overview by category.</p>
 
